@@ -1,0 +1,40 @@
+* {
+	transition: all 0.4s linear;
+}
+body {
+	text-align: center;
+	background: #222A61;
+	color: #EDE53E;
+	font-size: 90%;
+}
+.column {
+	display: flex;
+	flex-direction: column;
+/* 	justify-content: space-around; */
+	align-items: center;
+	gap: 0.4em;
+}
+.column > * {
+	flex-basis: auto;
+}
+input {
+	font-size: 1em;
+/* 	display: block; */
+}
+button {
+	border: none;
+	border-radius: 0.5em;
+	padding: 0.4em 0.8em;
+	background: #526FEE;
+	color: #EDE53E;
+}
+button:hover {
+	background: #222A61;
+	cursor: pointer;
+}
+hr {
+	border-color: #526FEE;
+/* 	height: 12em; */
+	border-width: 0.1em;
+	margin: 1em 0;
+}
