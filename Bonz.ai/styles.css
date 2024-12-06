@@ -72,10 +72,10 @@ body {
   background-color: #00c3a9;
   color: white;
   text-decoration: none;
-  padding: 10px 20px; /* Gör den något mindre */
-  font-size: 0.9rem; /* Anpassa storleken */
+  padding: 10px 20px; 
+  font-size: 0.9rem; 
   font-weight: bold;
-  border-radius: 25px; /* Rundar till samma som knapparna i hero */
+  border-radius: 25px; 
   cursor: pointer;
   border: none;
 }
@@ -107,18 +107,18 @@ body {
 }
 
 .hero .title {
-  font-size: 3rem; /* Stor rubrik */
+  font-size: 3rem; 
   font-weight: bold;
   color: #333;
-  line-height: 1.2; /* Minskar radavstånd för kompakt text */
+  line-height: 1.2; 
   margin-bottom: 20px;
 }
 
 .hero .subtitle {
-  font-size: 1.2rem; /* Mindre underrubrik */
+  font-size: 1.2rem; 
   color: #666;
   margin-bottom: 30px;
-  line-height: 1.5; /* Radavstånd för läsbarhet */
+  line-height: 1.5; 
 }
 
 .hero .actions {
@@ -136,7 +136,7 @@ body {
   padding: 15px 25px; 
   font-size: 1rem;
   font-weight: bold;
-  border-radius: 25px; /* Rundar kanterna mer */
+  border-radius: 25px; 
   cursor: pointer;
   border: none;
   transition: background-color 0.3s ease;
@@ -158,8 +158,8 @@ body {
 
 /* Footer Section */
 .footer {
-  background-color: #333; /* Mörk bakgrund */
-  color: #fff; /* Vit text */
+  background-color: #333; 
+  color: #fff; 
   text-align: center;
   padding: 20px;
   margin-top: auto; 
@@ -197,9 +197,9 @@ body {
 .facilities {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Gör att hela sektionen fyller fönstret */
+  min-height: 100vh; 
   padding: 60px 20px;
-  background-color: #ffffff; /* Bakgrundsfärg */
+  background-color: #ffffff; 
   text-align: center;
 }
 
@@ -216,48 +216,48 @@ body {
 }
 
 .facilities .grid {
-  display: grid; /* Grid layout */
-  grid-template-columns: repeat(3, 1fr); /* Tre kolumner */
-  gap: 20px; /* Avstånd mellan boxarna */
-  justify-items: center; /* Centrerar varje box horisontellt */
-  align-items: center; /* Centrerar varje box vertikalt */
-  width: 100%; /* Gör gridens bredd flexibel */
-  max-width: 1200px; /* Begränsad bredd för grid */
-  margin: 0 auto; /* Centrerar hela grid på sidan */
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px; 
+  justify-items: center; 
+  align-items: center; 
+  width: 100%; 
+  max-width: 1200px; 
+  margin: 0 auto; 
 }
 
 .facility {
-  display: flex; /* Flexbox för att centrera innehållet i varje box */
-  flex-direction: column; /* Ordna innehållet i en kolumn */
-  justify-content: center; /* Vertikalt centrerat */
-  align-items: center; /* Horisontellt centrerat */
-  background-color: #fffaf6; /* Ljus bakgrund i boxarna */
-  border: 1px solid #ddd; /* Kantfärg */
-  border-radius: 10px; /* Rundade hörn */
-  padding: 20px; /* Inre avstånd */
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  background-color: #fffaf6; 
+  border: 1px solid #ddd; 
+  border-radius: 10px; 
+  padding: 20px; 
   text-align: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Mjuk skugga */
-  transition: transform 0.3s, box-shadow 0.3s; /* Effekt vid hover */
-  width: 100%; /* Flexibel bredd */
-  max-width: 300px; /* Begränsad bredd */
-  aspect-ratio: 1; /* Gör boxarna kvadratiska */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); 
+  transition: transform 0.3s, box-shadow 0.3s; 
+  width: 100%; 
+  max-width: 300px; 
+  aspect-ratio: 1; 
 }
 
 .facility:hover {
-  transform: scale(1.05); /* Förstorar boxen något vid hover */
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Djupare skugga vid hover */
+  transform: scale(1.05); 
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); 
 }
 
 .facility img {
-  width: 60px; /* Storlek på ikonen */
+  width: 60px; 
   height: 60px;
-  margin-bottom: 15px; /* Avstånd mellan bild och text */
+  margin-bottom: 15px; 
 }
 
 .facility .name {
   font-size: 1rem;
   color: #333;
-  font-weight: bold; /* Fet text */
+  font-weight: bold; 
 }
 
 /* Booking */
@@ -273,18 +273,18 @@ body {
 }
 
 .form {
-  display: grid; /* Aktiverar grid layout */
-  grid-template-columns: repeat(3, 1fr); /* Tre kolumner för datumen och gäster */
-  gap: 20px; /* Mellanrum mellan elementen */
-  justify-content: center; /* Centrerar innehållet horisontellt */
-  max-width: 800px; /* Begränsar bredden */
-  margin: 0 auto; /* Centrerar hela formuläret */
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px; 
+  justify-content: center; 
+  max-width: 800px; 
+  margin: 0 auto; 
 }
 
 .form-group {
   display: flex;
-  flex-direction: column; /* Vertikal layout för label och input */
-  align-items: flex-start; /* Vänsterjustera label och input */
+  flex-direction: column; 
+  align-items: flex-start; 
 }
 
 .form-group label {
@@ -297,21 +297,21 @@ body {
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
-  width: 100%; /* Gör att inputfältet fyller sin kolumn */
+  width: 100%; 
 }
 
 .button {
-  grid-column: 1 / span 3; /* Gör att knappen sträcker sig över hela raden */
+  grid-column: 1 / span 3; 
   background-color: #00c3a9;
   color: white;
-  padding: 8px 12px; /* Gör knappen lite mindre */
+  padding: 8px 12px; 
   border: none;
   font-size: 1rem;
   cursor: pointer;
   border-radius: 5px;
   transition: background-color 0.3s ease;
-  justify-self: center; /* Centrerar knappen horisontellt */
-  width: 200px; /* Sätter en fast bredd på knappen */
+  justify-self: center; 
+  width: 200px; 
 }
 
 .button:hover {
@@ -332,25 +332,25 @@ body {
 }
 
 .room-images {
-  display: flex; /* Flexbox layout */
-  flex-wrap: wrap; /* Låt boxarna brytas till nya rader */
-  justify-content: center; /* Centrerar boxarna horisontellt */
-  gap: 20px; /* Avstånd mellan boxarna */
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 20px; 
   padding: 20px;
 }
 
 .room {
   display: flex;
-  flex-direction: column; /* Vertikalt layout */
-  align-items: center; /* Centrerar innehåll horisontellt */
-  justify-content: center; /* Centrerar innehåll vertikalt */
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
   background-color: #fffaf6;
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 20px;
   text-align: center;
-  width: 350px; /* Fast bredd för boxar */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Mjuk skugga */
+  width: 350px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); 
 }
 
 .room img {
@@ -377,19 +377,19 @@ body {
 @media (max-width: 768px) {
   /* Hero section */
   .hero {
-    flex-direction: column; /* Ställer om till kolumn-layout */
+    flex-direction: column; 
     text-align: center;
     padding: 20px;
   }
 
   .hero .image {
-    margin-top: 20px; /* Lägg till utrymme över bilden */
+    margin-top: 20px; 
   }
 
   /* Facilities */
   .facilities .grid {
-    grid-template-columns: repeat(2, 1fr); /* Två kolumner */
-    gap: 15px; /* Mindre avstånd mellan rutor */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 15px; 
   }
 
   /* Header */
@@ -416,7 +416,7 @@ body {
   }
 
   .header__menu-checkbox:checked + .header__menu-toggle + .header__list {
-    display: flex; /* Visa menyn när checkboxen är markerad */
+    display: flex; 
   }
 }
 
@@ -424,24 +424,24 @@ body {
 @media (max-width: 480px) {
   /* Hero section */
   .image img {
-    max-height: 300px; /* Begränsa höjden på bilden */
+    max-height: 300px; 
   }
 
   /* Facilities */
   .facilities .grid {
-    grid-template-columns: 1fr; /* En kolumn-layout */
-    gap: 10px; /* Mindre avstånd mellan rutor */
+    grid-template-columns: 1fr; 
+    gap: 10px; 
   }
 
   .facility {
-    max-width: 100%; /* Gör rutorna bredare */
+    max-width: 100%; 
   }
 
   /* Results section */
   .results .room {
-    width: 90%; /* Gör rummen mer responsiva */
+    width: 90%; 
     height: auto;
-    margin: 0 auto; /* Centrerar elementen */
+    margin: 0 auto; 
   }
 }
 
