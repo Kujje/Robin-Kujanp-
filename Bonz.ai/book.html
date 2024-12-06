@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Book a Room</title>
+</head>
+<body>
+  <!-- Header (med BEM) -->
+  <header class="header">
+    <div class="header__container">
+      <div class="header__logo">
+        <h1 class="header__title">Bonz.ai</h1>
+        <img src="logo.png" alt="Bonz.ai logotyp">
+      </div>
+      <nav class="header__nav">
+        <button class="header__menu-toggle" aria-label="Öppna meny">&#9776;</button>
+        <ul class="header__list">
+          <li><a href="index.html" class="header__link">Home</a></li>
+          <li><a href="#rooms" class="header__link">Rooms</a></li>
+          <li><a href="#about" class="header__link">About</a></li>
+          <li><a href="#contact" class="header__link">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="book.html" class="header__button">Book Now</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="booking">
+      <h2 class="title">Search for a Room</h2>
+      <form class="form">
+        <div class="form-group">
+          <label for="checkin">Check-in Date</label>
+          <input type="date" id="checkin" required>
+        </div>
+        <div class="form-group">
+          <label for="checkout">Check-out Date</label>
+          <input type="date" id="checkout" required>
+        </div>
+        <div class="form-group">
+          <label for="guests">Guests</label>
+          <input type="number" id="guests" placeholder="1" required>
+        </div>
+        <button type="submit" class="button">Search</button>
+      </form>
+    </section>
+
+      <section class="results">
+        <h2>Available Rooms</h2>
+        <div class="room-images"> 
+            <article class="room">
+                <img src="Luxurious  suite.webp" alt="Room 1">
+                <h3 class="room-title">Deluxe Suite</h3>
+                <p class="room-description">A luxurious room with stunning views and premium amenities.</p>
+            </article>
+            <article class="room">
+                <img src="Standard Room.webp" alt="Room 2">
+                <h3 class="room-title">Standard Room</h3>
+                <p class="room-description">A cozy room perfect for a short stay, equipped with all essentials.</p>
+            </article>
+            <article class="room">
+                <img src="Family Room.webp" alt="Room 3">
+                <h3 class="room-title">Family Room</h3>
+                <p class="room-description">Spacious room for the whole family, with additional beds.</p>
+            </article>
+        </div>
+    </section>
+      
+  </main>
+  <footer class="footer">
+    <div class="footer__container">
+      <p class="footer__text">© 2024 Bonz.ai. All Rights Reserved.</p>
+      <div class="footer__social">
+        <a href="#" class="footer__icon">Facebook</a>
+        <a href="#" class="footer__icon">Instagram</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

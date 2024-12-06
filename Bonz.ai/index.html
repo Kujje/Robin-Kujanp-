@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Bonz.ai</title>
+</head>
+<body>
+  <!-- Header (med BEM) -->
+  <header class="header">
+    <div class="header__container">
+      <div class="header__logo">
+        <!-- Ändra h1 till h2 för att undvika dubbla huvudrubriker -->
+        <h2 class="header__title">Bonz.ai</h2>
+        <img src="logo.png" alt="Bonz.ai logotyp">
+      </div>
+      <nav class="header__nav">
+        <button class="header__menu-toggle" aria-label="Öppna meny">&#9776;</button>
+        <ul class="header__list">
+          <li><a href="index.html" class="header__link">Home</a></li>
+          <li><a href="#rooms" class="header__link">Rooms</a></li>
+          <li><a href="#about" class="header__link">About</a></li>
+          <li><a href="#contact" class="header__link">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="book.html" class="header__button">Book Now</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="content">
+        <!-- Bevara huvudrubriken som h1 -->
+        <h1 class="title">Hotel for every moment rich in emotion</h1>
+        <p class="subtitle">Every moment feels like the first time in paradise view</p>
+        <div class="actions">
+          <a href="book.html" class="button">Book now</a>
+          <a href="facilities.html" class="button">Facilities</a>
+        </div>
+      </div>
+      <div class="image">
+        <img src="Startsida.jpg" alt="Hotel view">
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__container">
+      <p class="footer__text">© 2024 Bonz.ai. All Rights Reserved.</p>
+      <div class="footer__social">
+        <a href="#" class="footer__icon">Facebook</a>
+        <a href="#" class="footer__icon">Instagram</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,447 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+  background-color: #fffaf6;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+  
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header__logo img {
+  height: 50px;
+  width: auto;
+}
+
+.header__list {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  
+}
+
+.header__menu-toggle {
+  display: none;
+}
+
+.header__link {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #333;
+}
+
+.header__link:hover {
+  text-decoration: underline;
+}
+
+.header__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00c3a9;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px; /* Gör den något mindre */
+  font-size: 0.9rem; /* Anpassa storleken */
+  font-weight: bold;
+  border-radius: 25px; /* Rundar till samma som knapparna i hero */
+  cursor: pointer;
+  border: none;
+}
+
+.header__button:hover {
+  background-color: #009f86;
+}
+
+/* Dölj checkboxen */
+.header__menu-checkbox {
+  display: none;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #fffaf6;
+  gap: 20px;
+}
+
+.hero .content {
+  flex: 1 1 50%;
+  max-width: 600px;
+  text-align: left;
+}
+
+.hero .title {
+  font-size: 3rem; /* Stor rubrik */
+  font-weight: bold;
+  color: #333;
+  line-height: 1.2; /* Minskar radavstånd för kompakt text */
+  margin-bottom: 20px;
+}
+
+.hero .subtitle {
+  font-size: 1.2rem; /* Mindre underrubrik */
+  color: #666;
+  margin-bottom: 30px;
+  line-height: 1.5; /* Radavstånd för läsbarhet */
+}
+
+.hero .actions {
+  display: flex;
+  gap: 20px;
+}
+
+.hero .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00c3a9;
+  color: white;
+  text-decoration: none;
+  padding: 15px 25px; 
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 25px; /* Rundar kanterna mer */
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.hero .button:hover {
+  background-color: #009f86;
+}
+
+.hero .image {
+  flex: 1 1 50%;
+}
+
+.hero .image img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Footer Section */
+.footer {
+  background-color: #333; /* Mörk bakgrund */
+  color: #fff; /* Vit text */
+  text-align: center;
+  padding: 20px;
+  margin-top: auto; 
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer__text {
+  font-size: 0.9rem;
+}
+
+.footer__social {
+  display: flex;
+  gap: 15px;
+}
+
+.footer__icon {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.footer__icon:hover {
+  text-decoration: underline;
+}
+
+
+
+/* Facilities Section */
+.facilities {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Gör att hela sektionen fyller fönstret */
+  padding: 60px 20px;
+  background-color: #ffffff; /* Bakgrundsfärg */
+  text-align: center;
+}
+
+.facilities .title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.facilities .description {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: #666;
+}
+
+.facilities .grid {
+  display: grid; /* Grid layout */
+  grid-template-columns: repeat(3, 1fr); /* Tre kolumner */
+  gap: 20px; /* Avstånd mellan boxarna */
+  justify-items: center; /* Centrerar varje box horisontellt */
+  align-items: center; /* Centrerar varje box vertikalt */
+  width: 100%; /* Gör gridens bredd flexibel */
+  max-width: 1200px; /* Begränsad bredd för grid */
+  margin: 0 auto; /* Centrerar hela grid på sidan */
+}
+
+.facility {
+  display: flex; /* Flexbox för att centrera innehållet i varje box */
+  flex-direction: column; /* Ordna innehållet i en kolumn */
+  justify-content: center; /* Vertikalt centrerat */
+  align-items: center; /* Horisontellt centrerat */
+  background-color: #fffaf6; /* Ljus bakgrund i boxarna */
+  border: 1px solid #ddd; /* Kantfärg */
+  border-radius: 10px; /* Rundade hörn */
+  padding: 20px; /* Inre avstånd */
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Mjuk skugga */
+  transition: transform 0.3s, box-shadow 0.3s; /* Effekt vid hover */
+  width: 100%; /* Flexibel bredd */
+  max-width: 300px; /* Begränsad bredd */
+  aspect-ratio: 1; /* Gör boxarna kvadratiska */
+}
+
+.facility:hover {
+  transform: scale(1.05); /* Förstorar boxen något vid hover */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Djupare skugga vid hover */
+}
+
+.facility img {
+  width: 60px; /* Storlek på ikonen */
+  height: 60px;
+  margin-bottom: 15px; /* Avstånd mellan bild och text */
+}
+
+.facility .name {
+  font-size: 1rem;
+  color: #333;
+  font-weight: bold; /* Fet text */
+}
+
+/* Booking */
+.booking {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: grid; /* Aktiverar grid layout */
+  grid-template-columns: repeat(3, 1fr); /* Tre kolumner för datumen och gäster */
+  gap: 20px; /* Mellanrum mellan elementen */
+  justify-content: center; /* Centrerar innehållet horisontellt */
+  max-width: 800px; /* Begränsar bredden */
+  margin: 0 auto; /* Centrerar hela formuläret */
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column; /* Vertikal layout för label och input */
+  align-items: flex-start; /* Vänsterjustera label och input */
+}
+
+.form-group label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #666;
+}
+
+.form-group input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%; /* Gör att inputfältet fyller sin kolumn */
+}
+
+.button {
+  grid-column: 1 / span 3; /* Gör att knappen sträcker sig över hela raden */
+  background-color: #00c3a9;
+  color: white;
+  padding: 8px 12px; /* Gör knappen lite mindre */
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  justify-self: center; /* Centrerar knappen horisontellt */
+  width: 200px; /* Sätter en fast bredd på knappen */
+}
+
+.button:hover {
+  background-color: #009f86;
+}
+
+/* Results Section */
+.results {
+  padding: 40px 20px;
+  background-color: #fffaf6;
+}
+
+.results h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.room-images {
+  display: flex; /* Flexbox layout */
+  flex-wrap: wrap; /* Låt boxarna brytas till nya rader */
+  justify-content: center; /* Centrerar boxarna horisontellt */
+  gap: 20px; /* Avstånd mellan boxarna */
+  padding: 20px;
+}
+
+.room {
+  display: flex;
+  flex-direction: column; /* Vertikalt layout */
+  align-items: center; /* Centrerar innehåll horisontellt */
+  justify-content: center; /* Centrerar innehåll vertikalt */
+  background-color: #fffaf6;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 350px; /* Fast bredd för boxar */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Mjuk skugga */
+}
+
+.room img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.room-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.room-description {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Responsiv design */
+
+/* För mellan skärmar: max-width 768px */
+@media (max-width: 768px) {
+  /* Hero section */
+  .hero {
+    flex-direction: column; /* Ställer om till kolumn-layout */
+    text-align: center;
+    padding: 20px;
+  }
+
+  .hero .image {
+    margin-top: 20px; /* Lägg till utrymme över bilden */
+  }
+
+  /* Facilities */
+  .facilities .grid {
+    grid-template-columns: repeat(2, 1fr); /* Två kolumner */
+    gap: 15px; /* Mindre avstånd mellan rutor */
+  }
+
+  /* Header */
+  .header__list {
+    display: none; /* Dölj menyn som standard */
+    flex-direction: column;
+    gap: 10px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 10;
+  }
+
+  .header__menu-toggle {
+    display: block; /* Visa hamburgermenyn */
+    font-size: 1.5rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+  }
+
+  .header__menu-checkbox:checked + .header__menu-toggle + .header__list {
+    display: flex; /* Visa menyn när checkboxen är markerad */
+  }
+}
+
+/* För små skärmar: max-width 480px */
+@media (max-width: 480px) {
+  /* Hero section */
+  .image img {
+    max-height: 300px; /* Begränsa höjden på bilden */
+  }
+
+  /* Facilities */
+  .facilities .grid {
+    grid-template-columns: 1fr; /* En kolumn-layout */
+    gap: 10px; /* Mindre avstånd mellan rutor */
+  }
+
+  .facility {
+    max-width: 100%; /* Gör rutorna bredare */
+  }
+
+  /* Results section */
+  .results .room {
+    width: 90%; /* Gör rummen mer responsiva */
+    height: auto;
+    margin: 0 auto; /* Centrerar elementen */
+  }
+}
+
